@@ -4,6 +4,9 @@
 
 #include "qwindowkit_windows.h"
 
+#include <windows.h>
+#include <winternl.h>
+
 namespace QWK {
 
     static RTL_OSVERSIONINFOW GetRealOSVersionImpl() {

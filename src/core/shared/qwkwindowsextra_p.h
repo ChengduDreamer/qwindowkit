@@ -17,6 +17,8 @@
 #include <shellscalingapi.h>
 #include <dwmapi.h>
 #include <timeapi.h>
+#include <windows.h>
+#include <shellapi.h>
 
 #include <QWKCore/qwindowkit_windows.h>
 #include <QtCore/private/qsystemlibrary_p.h>
