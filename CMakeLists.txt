@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.19)
 
 project(QWindowKit VERSION 1.2.0.0 LANGUAGES CXX)
-
+include(env.cmake)
+set(CMAKE_PREFIX_PATH ${QT_ROOT}/lib/cmake)
 # ----------------------------------
 # Build Options
 # ----------------------------------
@@ -68,6 +69,8 @@ endif()
 # ----------------------------------
 set(QWINDOWKIT_VERSION ${PROJECT_VERSION})
 set(QWINDOWKIT_INSTALL_NAME ${PROJECT_NAME})
+
+add_subdirectory(qmsetup)
 
 # ----------------------------------
 # Find basic dependencies
