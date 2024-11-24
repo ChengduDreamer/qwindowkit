@@ -107,6 +107,7 @@ qm_init_directories()
 # ----------------------------------
 add_subdirectory(src)
 
-if(QWINDOWKIT_BUILD_EXAMPLES)
-    add_subdirectory(examples)
-endif()
+#if(QWINDOWKIT_BUILD_EXAMPLES)
+#    add_subdirectory(examples)
+#endif()
+add_subdirectory(examples)
