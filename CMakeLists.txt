@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.19)
 
 project(QWindowKit VERSION 1.2.0.0 LANGUAGES CXX)
-include(env.cmake)
-set(CMAKE_PREFIX_PATH ${QT_ROOT}/lib/cmake)
+if(NOT DEFINED QT_ROOT)
+	include(qt.cmake)
+	set(CMAKE_PREFIX_PATH ${QT_ROOT}/lib/cmake)
+endif()
 # ----------------------------------
 # Build Options
 # ----------------------------------
